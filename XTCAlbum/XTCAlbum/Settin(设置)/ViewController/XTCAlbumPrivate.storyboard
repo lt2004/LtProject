@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Album Private View Controller-->
+        <scene sceneID="wgG-ha-xh0">
+            <objects>
+                <viewController storyboardIdentifier="XTCAlbumPrivateViewController" id="DYS-Lx-D3I" customClass="XTCAlbumPrivateViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XfR-xu-1Bn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2d-Ky-H0R">
+                                <rect key="frame" x="15" y="99" width="171" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="iJC-Ob-WBw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uol-za-kwR">
+                                <rect key="frame" x="15" y="79" width="72" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="96x-Lg-S1y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KR4-1g-bLu">
+                                <rect key="frame" x="15" y="127" width="345" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="gfU-Fb-NEB"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uj-q1-VNt">
+                                <rect key="frame" x="125" y="212" width="125" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2uj-q1-VNt" secondAttribute="height" multiplier="376:150" id="n8A-PB-6PJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="vSs-EB-w9L"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="sec_enter"/>
+                                <connections>
+                                    <action selector="enterPrivateDetailClick:" destination="DYS-Lx-D3I" eventType="touchUpInside" id="aOw-4O-ll2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtx-xE-tkX">
+                                <rect key="frame" x="158" y="267" width="58" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="忘记密码"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="acT-Do-R9D" firstAttribute="trailing" secondItem="KR4-1g-bLu" secondAttribute="trailing" constant="15" id="2Kk-cn-orQ"/>
+                            <constraint firstItem="Rtx-xE-tkX" firstAttribute="centerX" secondItem="2uj-q1-VNt" secondAttribute="centerX" id="Erl-b5-4fc"/>
+                            <constraint firstItem="Rtx-xE-tkX" firstAttribute="top" secondItem="2uj-q1-VNt" secondAttribute="bottom" constant="5" id="Lvz-d9-Bnc"/>
+                            <constraint firstItem="K2d-Ky-H0R" firstAttribute="leading" secondItem="uol-za-kwR" secondAttribute="leading" id="QeK-JL-5NM"/>
+                            <constraint firstItem="KR4-1g-bLu" firstAttribute="top" secondItem="K2d-Ky-H0R" secondAttribute="bottom" constant="8" id="S5O-kr-rt4"/>
+                            <constraint firstItem="KR4-1g-bLu" firstAttribute="leading" secondItem="uol-za-kwR" secondAttribute="leading" id="XGE-r1-DGS"/>
+                            <constraint firstItem="K2d-Ky-H0R" firstAttribute="top" secondItem="uol-za-kwR" secondAttribute="bottom" id="b0L-Pm-d6i"/>
+                            <constraint firstItem="uol-za-kwR" firstAttribute="top" secondItem="acT-Do-R9D" secondAttribute="top" constant="15" id="e9M-dG-GQe"/>
+                            <constraint firstItem="2uj-q1-VNt" firstAttribute="centerX" secondItem="XfR-xu-1Bn" secondAttribute="centerX" id="fdh-Cq-y6Q"/>
+                            <constraint firstItem="2uj-q1-VNt" firstAttribute="top" secondItem="KR4-1g-bLu" secondAttribute="bottom" constant="50" id="gTM-1a-8fr"/>
+                            <constraint firstItem="uol-za-kwR" firstAttribute="leading" secondItem="acT-Do-R9D" secondAttribute="leading" constant="15" id="zRL-Np-NH4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="acT-Do-R9D"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ff1-E0-Gxo"/>
+                    <connections>
+                        <outlet property="forgetPasswordButton" destination="Rtx-xE-tkX" id="4mg-bQ-8Ub"/>
+                        <outlet property="passwordTextField" destination="KR4-1g-bLu" id="SBg-Rt-t3o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xsw-aK-eb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="137.18140929535232"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pql-qy-9SP">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="faB-uf-klQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="72m-CW-tKN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FHk-LT-vCb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DYS-Lx-D3I" kind="relationship" relationship="rootViewController" id="uix-P3-748"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sec_enter" width="188" height="75"/>
+    </resources>
+</document>

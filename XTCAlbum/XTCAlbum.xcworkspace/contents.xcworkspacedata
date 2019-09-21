@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:XTCAlbum/Publish(&#x53d1;&#x5e03;)/XTCPublishMainModel+CoreDataProperties.h">
+   </FileRef>
+   <FileRef
+      location = "group:XTCAlbum/Publish(&#x53d1;&#x5e03;)/XTCPublishMainModel+CoreDataClass.h">
+   </FileRef>
+   <FileRef
+      location = "group:XTCAlbum/Publish(&#x53d1;&#x5e03;)/XTCPublishMainModel+CoreDataClass.m">
+   </FileRef>
+   <FileRef
+      location = "group:XTCAlbum/Publish(&#x53d1;&#x5e03;)/XTCPublishMainModel+CoreDataProperties.m">
+   </FileRef>
+   <FileRef
+      location = "group:XTCAlbum/Publish(&#x53d1;&#x5e03;)/XTCPublishSubUploadModel+CoreDataProperties.h">
+   </FileRef>
+   <FileRef
+      location = "group:XTCAlbum/Publish(&#x53d1;&#x5e03;)/XTCPublishSubUploadModel+CoreDataClass.h">
+   </FileRef>
+   <FileRef
+      location = "group:XTCAlbum/Publish(&#x53d1;&#x5e03;)/XTCPublishSubUploadModel+CoreDataClass.m">
+   </FileRef>
+   <FileRef
+      location = "group:XTCAlbum/Publish(&#x53d1;&#x5e03;)/XTCPublishSubUploadModel+CoreDataProperties.m">
+   </FileRef>
+   <FileRef
+      location = "group:AblumModel+CoreDataProperties.h">
+   </FileRef>
+   <FileRef
+      location = "group:AblumModel+CoreDataClass.h">
+   </FileRef>
+   <FileRef
+      location = "group:AblumModel+CoreDataClass.m">
+   </FileRef>
+   <FileRef
+      location = "group:AblumModel+CoreDataProperties.m">
+   </FileRef>
+   <FileRef
+      location = "group:XTCAlbum.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

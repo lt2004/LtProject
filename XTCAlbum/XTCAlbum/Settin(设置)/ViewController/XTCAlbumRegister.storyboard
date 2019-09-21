@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Album Register View Controller-->
+        <scene sceneID="Bb2-C9-Fss">
+            <objects>
+                <viewController storyboardIdentifier="XTCAlbumRegisterViewController" id="7CL-XY-vO5" customClass="XTCAlbumRegisterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gZN-TA-F2P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lah-7e-dni">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ha-6f-ilo">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="album_logo_title" translatesAutoresizingMaskIntoConstraints="NO" id="cuB-fa-8c1">
+                                        <rect key="frame" x="117" y="3" width="180" height="38"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j83-L2-70u">
+                                        <rect key="frame" x="8" y="0.0" width="40" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="101-PB-OCO"/>
+                                            <constraint firstAttribute="height" constant="44" id="O3e-XC-h6Y"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <state key="normal" image="home_back_black"/>
+                                        <connections>
+                                            <action selector="backButtonClick:" destination="7CL-XY-vO5" eventType="touchUpInside" id="y58-WH-AEr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="cuB-fa-8c1" firstAttribute="centerY" secondItem="7ha-6f-ilo" secondAttribute="centerY" id="7ub-tK-mgT"/>
+                                    <constraint firstItem="j83-L2-70u" firstAttribute="leading" secondItem="7ha-6f-ilo" secondAttribute="leading" constant="8" id="KA8-BR-Iff"/>
+                                    <constraint firstItem="j83-L2-70u" firstAttribute="centerY" secondItem="7ha-6f-ilo" secondAttribute="centerY" id="QKj-if-0B1"/>
+                                    <constraint firstItem="cuB-fa-8c1" firstAttribute="centerX" secondItem="7ha-6f-ilo" secondAttribute="centerX" id="ryy-P2-7cc"/>
+                                    <constraint firstAttribute="height" constant="44" id="wiI-1s-2V5"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="i88-gr-gKK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumRegisterCellName" rowHeight="48" id="9UY-hC-SOs" customClass="AlbumRegisterCell">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="48"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9UY-hC-SOs" id="T9N-g0-lFd">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="47.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewT-Fv-WDV">
+                                                    <rect key="frame" x="35" y="0.0" width="344" height="48.5"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="小棠菜相册账号/手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BSG-zI-OqT">
+                                                            <rect key="frame" x="8" y="0.0" width="336" height="48.5"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="6ZW-lF-saO"/>
+                                                        <constraint firstAttribute="trailing" secondItem="BSG-zI-OqT" secondAttribute="trailing" id="Cew-Xe-wX6"/>
+                                                        <constraint firstItem="BSG-zI-OqT" firstAttribute="leading" secondItem="ewT-Fv-WDV" secondAttribute="leading" constant="8" id="hNW-KP-8Oi"/>
+                                                        <constraint firstItem="BSG-zI-OqT" firstAttribute="top" secondItem="ewT-Fv-WDV" secondAttribute="top" id="me8-U0-dwM"/>
+                                                        <constraint firstAttribute="bottom" secondItem="BSG-zI-OqT" secondAttribute="bottom" id="mhI-XC-2Wd"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ewT-Fv-WDV" secondAttribute="bottom" id="46K-zp-xaF"/>
+                                                <constraint firstItem="ewT-Fv-WDV" firstAttribute="top" secondItem="T9N-g0-lFd" secondAttribute="top" id="Fse-Bc-Pes"/>
+                                                <constraint firstItem="ewT-Fv-WDV" firstAttribute="leading" secondItem="T9N-g0-lFd" secondAttribute="leading" constant="35" id="PEM-qS-WQM"/>
+                                                <constraint firstAttribute="trailing" secondItem="ewT-Fv-WDV" secondAttribute="trailing" constant="35" id="itv-Mp-KMA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bgView" destination="ewT-Fv-WDV" id="CVZ-Fb-Izo"/>
+                                            <outlet property="infoTextField" destination="BSG-zI-OqT" id="l97-hg-g42"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7CL-XY-vO5" id="0bu-Fn-fOh"/>
+                                    <outlet property="delegate" destination="7CL-XY-vO5" id="wrc-ke-7Wo"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还没有账号，去注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJE-ha-KwH">
+                                <rect key="frame" x="138" y="782.5" width="138" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAA-Wv-on1">
+                                <rect key="frame" x="226" y="782.5" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="rWT-fK-Acr"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="loginButtonClick:" destination="7CL-XY-vO5" eventType="touchUpInside" id="Vbh-op-UaO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海小棠菜网络科技有限公司版权所有" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KG4-LU-7QH">
+                                <rect key="frame" x="15" y="837.5" width="384" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.1215686275" green="0.1215686275" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Toe-mA-ZNT" firstAttribute="trailing" secondItem="Lah-7e-dni" secondAttribute="trailing" id="1zw-es-MON"/>
+                            <constraint firstItem="Toe-mA-ZNT" firstAttribute="bottom" secondItem="KG4-LU-7QH" secondAttribute="bottom" constant="10" id="C47-4I-uSl"/>
+                            <constraint firstItem="7ha-6f-ilo" firstAttribute="leading" secondItem="Toe-mA-ZNT" secondAttribute="leading" id="EWa-xr-ai7"/>
+                            <constraint firstItem="qJE-ha-KwH" firstAttribute="bottom" secondItem="NAA-Wv-on1" secondAttribute="bottom" id="GEq-kk-cIQ"/>
+                            <constraint firstItem="i88-gr-gKK" firstAttribute="leading" secondItem="Toe-mA-ZNT" secondAttribute="leading" id="J1a-Eq-Uz6"/>
+                            <constraint firstItem="qJE-ha-KwH" firstAttribute="trailing" secondItem="NAA-Wv-on1" secondAttribute="trailing" id="LIk-k7-fdk"/>
+                            <constraint firstItem="Toe-mA-ZNT" firstAttribute="bottom" secondItem="i88-gr-gKK" secondAttribute="bottom" id="MsF-0f-ytL"/>
+                            <constraint firstItem="Toe-mA-ZNT" firstAttribute="trailing" secondItem="i88-gr-gKK" secondAttribute="trailing" id="U3O-ln-5P1"/>
+                            <constraint firstItem="KG4-LU-7QH" firstAttribute="top" secondItem="qJE-ha-KwH" secondAttribute="bottom" constant="25" id="UVj-A1-v1y"/>
+                            <constraint firstItem="qJE-ha-KwH" firstAttribute="top" secondItem="NAA-Wv-on1" secondAttribute="top" id="WCz-KB-Nxc"/>
+                            <constraint firstItem="Toe-mA-ZNT" firstAttribute="trailing" secondItem="KG4-LU-7QH" secondAttribute="trailing" constant="15" id="XT7-1G-9Dy"/>
+                            <constraint firstItem="i88-gr-gKK" firstAttribute="top" secondItem="7ha-6f-ilo" secondAttribute="bottom" id="Xvb-wU-lRs"/>
+                            <constraint firstItem="qJE-ha-KwH" firstAttribute="centerX" secondItem="gZN-TA-F2P" secondAttribute="centerX" id="gE9-lM-Jkf"/>
+                            <constraint firstItem="7ha-6f-ilo" firstAttribute="top" secondItem="Lah-7e-dni" secondAttribute="bottom" id="hDi-KR-3op"/>
+                            <constraint firstItem="Lah-7e-dni" firstAttribute="leading" secondItem="Toe-mA-ZNT" secondAttribute="leading" id="jD2-yM-Twp"/>
+                            <constraint firstItem="Lah-7e-dni" firstAttribute="top" secondItem="gZN-TA-F2P" secondAttribute="top" id="pee-bl-fb7"/>
+                            <constraint firstItem="7ha-6f-ilo" firstAttribute="top" secondItem="Toe-mA-ZNT" secondAttribute="top" id="uo1-Z3-pGB"/>
+                            <constraint firstItem="KG4-LU-7QH" firstAttribute="leading" secondItem="Toe-mA-ZNT" secondAttribute="leading" constant="15" id="xud-5l-8WW"/>
+                            <constraint firstItem="Toe-mA-ZNT" firstAttribute="trailing" secondItem="7ha-6f-ilo" secondAttribute="trailing" id="zL6-Qb-vBI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Toe-mA-ZNT"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginLabel" destination="qJE-ha-KwH" id="n2f-pB-hhW"/>
+                        <outlet property="registerTableView" destination="i88-gr-gKK" id="tBu-p0-isK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZSs-JC-QFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="album_logo_title" width="180" height="38"/>
+        <image name="home_back_black" width="19" height="19"/>
+    </resources>
+</document>

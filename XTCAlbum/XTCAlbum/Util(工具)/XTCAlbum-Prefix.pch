@@ -1,0 +1,45 @@
+//
+//  XTCAlbum-Prefix.pch
+//  XTCAlbum
+//
+//  Created by Xie Shu on 2018/4/27.
+//  Copyright © 2018年 漫漫. All rights reserved.
+//
+
+#ifndef XTCAlbum_Prefix_pch
+#define XTCAlbum_Prefix_pch
+
+#import "AppDefine.h"
+#import <Masonry/Masonry.h>
+#import "XTCNetworkManager.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
+#import "XTCResponseModel.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <Mantle/Mantle.h>
+#import <KVNProgress/KVNProgress.h>
+#import "XTCUserModel.h"
+#import "GlobalData.h"
+#import <EGOCache/EGOCache.h>
+#import "UIImage+Resize.h"
+#import <TZImagePickerController/TZImagePickerController.h>
+#import "XTCBaseNavigationController.h"
+#import "PublishPostDataBase.h"
+#import "XTCBaseViewController.h"
+#import "StaticCommonUtil.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import "SourceICloudManager.h"
+#import "EnumManager.h"
+#import "CommonWebViewViewController.h"
+#import "NBZUtil.h"
+
+// DDLog部分
+// DDLogLevelOff DDLogLevelVerbose
+static const int ddLogLevel = DDLogLevelVerbose;
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* XTCAlbum_Prefix_pch */

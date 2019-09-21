@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="XTCPublishMainModel" representedClassName="XTCPublishMainModel" syncable="YES" codeGenerationType="class">
+        <attribute name="art_link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chat_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chat_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="current_lat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="current_lng" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="draft_cover" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ending_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ending_title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_bus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_bus_show" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="is_personal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="post_content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="post_title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pubish_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pubish_type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="publish_sort_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="publish_tour_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="share_location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sub_post_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tk" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="uploads" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="XTCPublishSubUploadModel" inverseName="mains" inverseEntity="XTCPublishSubUploadModel" syncable="YES"/>
+    </entity>
+    <entity name="XTCPublishSubUploadModel" representedClassName="XTCPublishSubUploadModel" syncable="YES" codeGenerationType="class">
+        <attribute name="date_time_original" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="file_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="file_index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="file_title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="file_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lng" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="make" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="post_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pro_index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="source_path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="temp_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="mains" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="XTCPublishMainModel" inverseName="uploads" inverseEntity="XTCPublishMainModel" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="XTCPublishMainModel" positionX="-63" positionY="-18" width="128" height="375"/>
+        <element name="XTCPublishSubUploadModel" positionX="-54" positionY="144" width="128" height="255"/>
+    </elements>
+</model>

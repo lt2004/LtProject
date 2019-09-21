@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.98" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="AlbumPublishModel" representedClassName="AlbumPublishModel" syncable="YES" codeGenerationType="class">
+        <attribute name="publish_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="publish_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publish_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publish_tag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publish_title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publish_video" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="share_location" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="publishSource" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PublishSourceModel" syncable="YES"/>
+    </entity>
+    <entity name="PublishSourceModel" representedClassName="PublishSourceModel" syncable="YES" codeGenerationType="class">
+        <attribute name="source_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="source_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="source_lat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="source_lng" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="source_path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="source_sort_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="source_type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="albumPublish" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AlbumPublishModel" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AlbumPublishModel" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="PublishSourceModel" positionX="-54" positionY="27" width="128" height="165"/>
+    </elements>
+</model>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.98" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="SourceTime" representedClassName="SourceTime" syncable="YES" codeGenerationType="class">
+        <attribute name="is_video" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="source_path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="source_time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SourceTime" positionX="-54" positionY="-9" width="128" height="90"/>
+    </elements>
+</model>

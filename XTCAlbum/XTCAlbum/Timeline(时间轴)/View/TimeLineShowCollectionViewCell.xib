@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TimeLineShowCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WBT-S4-hgP">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                </imageView>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVI-MK-Isq">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_selected_on" translatesAutoresizingMaskIntoConstraints="NO" id="adt-qu-hb7">
+                    <rect key="frame" x="72" y="72" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="DaL-yi-SZz"/>
+                        <constraint firstAttribute="width" constant="25" id="pxh-C6-UQZ"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_video" translatesAutoresizingMaskIntoConstraints="NO" id="jd8-dJ-StF">
+                    <rect key="frame" x="78" y="2" width="20" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="0Wy-qf-IzA"/>
+                        <constraint firstAttribute="height" constant="22" id="Vs7-CQ-bKU"/>
+                    </constraints>
+                </imageView>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4L-8A-cNT">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zVI-MK-Isq" secondAttribute="trailing" id="55k-vM-86j"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="adt-qu-hb7" secondAttribute="trailing" constant="3" id="GrY-G1-b4g"/>
+                <constraint firstItem="zVI-MK-Isq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HXO-Cr-v9y"/>
+                <constraint firstItem="Z4L-8A-cNT" firstAttribute="leading" secondItem="WBT-S4-hgP" secondAttribute="leading" id="No4-CY-j9A"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="adt-qu-hb7" secondAttribute="bottom" constant="3" id="Qek-Iq-RfC"/>
+                <constraint firstItem="Z4L-8A-cNT" firstAttribute="top" secondItem="WBT-S4-hgP" secondAttribute="top" id="QiJ-ok-cgW"/>
+                <constraint firstItem="Z4L-8A-cNT" firstAttribute="bottom" secondItem="WBT-S4-hgP" secondAttribute="bottom" id="Qj7-T6-hku"/>
+                <constraint firstItem="Z4L-8A-cNT" firstAttribute="trailing" secondItem="WBT-S4-hgP" secondAttribute="trailing" id="TB1-FO-edj"/>
+                <constraint firstAttribute="trailing" secondItem="jd8-dJ-StF" secondAttribute="trailing" constant="2" id="UcC-d5-oOs"/>
+                <constraint firstItem="zVI-MK-Isq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fIP-hg-6BN"/>
+                <constraint firstAttribute="bottom" secondItem="zVI-MK-Isq" secondAttribute="bottom" id="mTR-oF-tld"/>
+                <constraint firstAttribute="bottom" secondItem="WBT-S4-hgP" secondAttribute="bottom" id="omt-nh-lAu"/>
+                <constraint firstItem="WBT-S4-hgP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sul-LE-Rjd"/>
+                <constraint firstItem="jd8-dJ-StF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="tsI-SF-tmn"/>
+                <constraint firstAttribute="trailing" secondItem="WBT-S4-hgP" secondAttribute="trailing" id="wVB-4T-xds"/>
+                <constraint firstItem="WBT-S4-hgP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zr3-C3-zql"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="corverView" destination="Z4L-8A-cNT" id="36O-9c-ARV"/>
+                <outlet property="selectBgView" destination="zVI-MK-Isq" id="X3n-Bj-hWQ"/>
+                <outlet property="selectImageView" destination="adt-qu-hb7" id="bDJ-fQ-v8X"/>
+                <outlet property="showThumbnailView" destination="WBT-S4-hgP" id="Uga-n8-0Oa"/>
+                <outlet property="videoImageView" destination="jd8-dJ-StF" id="lNp-s3-txI"/>
+            </connections>
+            <point key="canvasLocation" x="0.0" y="113.31521739130436"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_video" width="50" height="53"/>
+        <image name="photo_selected_on" width="44" height="44"/>
+    </resources>
+</document>

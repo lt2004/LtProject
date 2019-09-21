@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Publish iCloud Progress View Controller-->
+        <scene sceneID="9Ya-Nu-SxU">
+            <objects>
+                <viewController storyboardIdentifier="PublishICloudProgressViewController" id="NYH-jZ-Thd" customClass="PublishICloudProgressViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="btk-pH-XOM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Xr-RY-unR">
+                                <rect key="frame" x="87" y="358" width="240" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nI-Fy-z9b">
+                                        <rect key="frame" x="0.0" y="130" width="240" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bO0-Xi-nej"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="取消iCloud下载">
+                                            <color key="titleColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="4nI-Fy-z9b" firstAttribute="leading" secondItem="0Xr-RY-unR" secondAttribute="leading" id="2QW-UF-trP"/>
+                                    <constraint firstAttribute="trailing" secondItem="4nI-Fy-z9b" secondAttribute="trailing" id="QJu-3E-bVM"/>
+                                    <constraint firstAttribute="bottom" secondItem="4nI-Fy-z9b" secondAttribute="bottom" id="VxK-4B-8vu"/>
+                                    <constraint firstAttribute="width" constant="240" id="ZNe-4v-wcI"/>
+                                    <constraint firstAttribute="height" constant="180" id="bKQ-lV-g7t"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Xr-RY-unR" firstAttribute="centerY" secondItem="btk-pH-XOM" secondAttribute="centerY" id="CES-Hq-hTX"/>
+                            <constraint firstItem="0Xr-RY-unR" firstAttribute="centerX" secondItem="btk-pH-XOM" secondAttribute="centerX" id="WgM-He-GIj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hmK-1B-qyU"/>
+                    </view>
+                    <connections>
+                        <outlet property="bgView" destination="0Xr-RY-unR" id="jmd-aU-Ci2"/>
+                        <outlet property="dismisButton" destination="4nI-Fy-z9b" id="z0X-Ug-Qrq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFX-DU-3pt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="91"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Time Show Select More View Controller-->
+        <scene sceneID="xDQ-S0-twr">
+            <objects>
+                <viewController storyboardIdentifier="XTCTimeShowSelectMoreViewController" id="V06-cL-LHH" customClass="XTCTimeShowSelectMoreViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0zh-E9-una">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="91i-Xs-6vT">
+                                <rect key="frame" x="0.0" y="862" width="414" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Xax-jF-XED">
+                                <rect key="frame" x="0.0" y="707" width="414" height="155"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="otQ-5t-kJB"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="V06-cL-LHH" id="ddo-lF-Zg9"/>
+                                    <outlet property="delegate" destination="V06-cL-LHH" id="EJp-6K-zOM"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="re6-EN-gOO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="663"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="91i-Xs-6vT" secondAttribute="bottom" id="9wk-dP-vrt"/>
+                            <constraint firstItem="91i-Xs-6vT" firstAttribute="top" secondItem="Xax-jF-XED" secondAttribute="bottom" id="G57-hJ-6jF"/>
+                            <constraint firstItem="91i-Xs-6vT" firstAttribute="leading" secondItem="0zh-E9-una" secondAttribute="leading" id="J27-dd-WF6"/>
+                            <constraint firstItem="dWy-vW-R0m" firstAttribute="trailing" secondItem="re6-EN-gOO" secondAttribute="trailing" id="NQK-iK-ukx"/>
+                            <constraint firstItem="dWy-vW-R0m" firstAttribute="trailing" secondItem="Xax-jF-XED" secondAttribute="trailing" id="OxH-3k-1dP"/>
+                            <constraint firstItem="re6-EN-gOO" firstAttribute="leading" secondItem="dWy-vW-R0m" secondAttribute="leading" id="eUT-nL-JRu"/>
+                            <constraint firstItem="dWy-vW-R0m" firstAttribute="trailing" secondItem="91i-Xs-6vT" secondAttribute="trailing" id="gA6-cg-Iu5"/>
+                            <constraint firstItem="re6-EN-gOO" firstAttribute="top" secondItem="dWy-vW-R0m" secondAttribute="top" id="gIc-x2-Qbr"/>
+                            <constraint firstItem="Xax-jF-XED" firstAttribute="leading" secondItem="0zh-E9-una" secondAttribute="leading" id="iZW-o8-MWq"/>
+                            <constraint firstItem="Xax-jF-XED" firstAttribute="top" secondItem="re6-EN-gOO" secondAttribute="bottom" id="ub5-IB-ulk"/>
+                            <constraint firstItem="dWy-vW-R0m" firstAttribute="bottom" secondItem="Xax-jF-XED" secondAttribute="bottom" id="us4-gH-0ew"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dWy-vW-R0m"/>
+                    </view>
+                    <connections>
+                        <outlet property="dismisButton" destination="re6-EN-gOO" id="pVv-YN-isd"/>
+                        <outlet property="heightLayoutConstraint" destination="otQ-5t-kJB" id="DTd-B7-z3S"/>
+                        <outlet property="selectTableView" destination="Xax-jF-XED" id="4zD-GR-rWb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JmE-4k-e5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72" y="158"/>
+        </scene>
+    </scenes>
+</document>

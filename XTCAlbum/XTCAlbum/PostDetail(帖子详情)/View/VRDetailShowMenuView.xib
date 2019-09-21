@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VRDetailShowMenuView">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4l-qH-xMM">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Clg-ax-ptn"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmY-dr-dgA">
+                    <rect key="frame" x="150" y="125" width="50" height="50"/>
+                    <state key="normal" image="vr_detail_menu_more"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SmY-dr-dgA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4xH-iN-bpn"/>
+                <constraint firstItem="I4l-qH-xMM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9n6-gc-cPb"/>
+                <constraint firstAttribute="trailing" secondItem="SmY-dr-dgA" secondAttribute="trailing" id="MOM-Ra-9Le"/>
+                <constraint firstAttribute="trailing" secondItem="I4l-qH-xMM" secondAttribute="trailing" id="cQt-bF-YNM"/>
+                <constraint firstAttribute="bottom" secondItem="I4l-qH-xMM" secondAttribute="bottom" id="kby-3w-nsW"/>
+                <constraint firstItem="I4l-qH-xMM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oMg-K3-nbk"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="moreButton" destination="SmY-dr-dgA" id="fj5-DM-RqT"/>
+                <outlet property="widthLayoutConstraint" destination="Clg-ax-ptn" id="Dsd-6e-Ohn"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="vr_detail_menu_more" width="50" height="50"/>
+    </resources>
+</document>

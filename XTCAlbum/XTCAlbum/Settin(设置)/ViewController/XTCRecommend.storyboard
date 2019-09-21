@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recommend View Controller-->
+        <scene sceneID="TxP-Bh-SYA">
+            <objects>
+                <viewController storyboardIdentifier="XTCRecommendViewController" id="TNO-IN-WS7" customClass="XTCRecommendViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RyA-0C-p1T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KV0-Cb-DKQ">
+                                <rect key="frame" x="97.5" y="228.5" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Kys-ni-DNo"/>
+                                    <constraint firstAttribute="width" constant="180" id="ce6-T3-i5C"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_text" translatesAutoresizingMaskIntoConstraints="NO" id="r85-nD-tAA">
+                                <rect key="frame" x="82" y="148.5" width="210" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="en3-By-hbp"/>
+                                    <constraint firstAttribute="height" constant="65" id="swE-5H-Aan"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xff-SF-CUg">
+                                <rect key="frame" x="137.5" y="428.5" width="100" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="37g-62-w9C"/>
+                                    <constraint firstAttribute="width" constant="100" id="Ao4-FB-9vn"/>
+                                </constraints>
+                                <state key="normal" title="分享">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareButtonClick:" destination="TNO-IN-WS7" eventType="touchUpInside" id="j3R-Aa-Hf7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r85-nD-tAA" firstAttribute="centerX" secondItem="RyA-0C-p1T" secondAttribute="centerX" id="FpB-uL-Cpk"/>
+                            <constraint firstItem="Xff-SF-CUg" firstAttribute="centerX" secondItem="RyA-0C-p1T" secondAttribute="centerX" id="Qht-bz-C3V"/>
+                            <constraint firstItem="KV0-Cb-DKQ" firstAttribute="top" secondItem="r85-nD-tAA" secondAttribute="bottom" constant="15" id="VEP-TY-W3K"/>
+                            <constraint firstItem="Xff-SF-CUg" firstAttribute="top" secondItem="KV0-Cb-DKQ" secondAttribute="bottom" constant="20" id="aOa-81-Vid"/>
+                            <constraint firstItem="KV0-Cb-DKQ" firstAttribute="centerX" secondItem="RyA-0C-p1T" secondAttribute="centerX" id="t1X-ac-Jq9"/>
+                            <constraint firstItem="KV0-Cb-DKQ" firstAttribute="centerY" secondItem="RyA-0C-p1T" secondAttribute="centerY" constant="-15" id="zct-3P-4bg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fv5-Yy-3O8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eZH-Th-Cam"/>
+                    <connections>
+                        <outlet property="recommendImageView" destination="KV0-Cb-DKQ" id="eKM-Ng-I4f"/>
+                        <outlet property="shareButton" destination="Xff-SF-CUg" id="OPu-lL-QCf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BG6-QZ-Tkk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959.20000000000005" y="144.3778110944528"/>
+        </scene>
+        <!--Base Navigation Controller-->
+        <scene sceneID="EmX-Bq-sk8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d3z-2b-H1i" customClass="XTCBaseNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8RQ-o6-kT1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TNO-IN-WS7" kind="relationship" relationship="rootViewController" id="e4M-ql-mTf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTO-wi-3qm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="144.3778110944528"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ad_text" width="550" height="171"/>
+    </resources>
+</document>

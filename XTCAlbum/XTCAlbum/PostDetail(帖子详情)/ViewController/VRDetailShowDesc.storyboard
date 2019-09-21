@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail Show Desc View Controller-->
+        <scene sceneID="pSt-iH-5M7">
+            <objects>
+                <viewController storyboardIdentifier="VRDetailShowDescViewController" id="Umx-c4-yQj" customClass="VRDetailShowDescViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qjN-eo-yDF"/>
+                        <viewControllerLayoutGuide type="bottom" id="zT7-UK-TL7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L7S-Mt-MeD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EET-ML-ge2">
+                                <rect key="frame" x="40" y="143.5" width="295" height="380"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nd-l4-ciz">
+                                        <rect key="frame" x="0.0" y="330" width="295" height="50"/>
+                                        <color key="backgroundColor" red="0.49411764705882355" green="0.82745098039215681" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="O7f-TQ-wdc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="关闭">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="小棠菜旅行" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="70p-ve-Wjl">
+                                        <rect key="frame" x="3" y="110" width="289" height="215"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ebY-ZE-NWE">
+                                        <rect key="frame" x="107" y="15" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="BeT-Kv-337"/>
+                                            <constraint firstAttribute="height" constant="80" id="ib2-RY-UO6"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="3RW-e7-nxv"/>
+                                    <constraint firstAttribute="trailing" secondItem="1nd-l4-ciz" secondAttribute="trailing" id="3si-7I-VS2"/>
+                                    <constraint firstAttribute="bottom" secondItem="1nd-l4-ciz" secondAttribute="bottom" id="KJe-yv-tNH"/>
+                                    <constraint firstItem="1nd-l4-ciz" firstAttribute="top" secondItem="70p-ve-Wjl" secondAttribute="bottom" constant="5" id="OZG-zu-8x6"/>
+                                    <constraint firstItem="70p-ve-Wjl" firstAttribute="top" secondItem="EET-ML-ge2" secondAttribute="top" constant="110" id="PyR-jD-Y81"/>
+                                    <constraint firstItem="ebY-ZE-NWE" firstAttribute="centerX" secondItem="EET-ML-ge2" secondAttribute="centerX" id="UBw-Bz-Pt6"/>
+                                    <constraint firstItem="70p-ve-Wjl" firstAttribute="leading" secondItem="EET-ML-ge2" secondAttribute="leading" constant="3" id="ne3-Gt-1lX"/>
+                                    <constraint firstItem="ebY-ZE-NWE" firstAttribute="top" secondItem="EET-ML-ge2" secondAttribute="top" constant="15" id="pjm-dr-B4S"/>
+                                    <constraint firstItem="1nd-l4-ciz" firstAttribute="leading" secondItem="EET-ML-ge2" secondAttribute="leading" id="yB7-Kz-qk3"/>
+                                    <constraint firstAttribute="trailing" secondItem="70p-ve-Wjl" secondAttribute="trailing" constant="3" id="zQD-cZ-Og2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EET-ML-ge2" firstAttribute="leading" secondItem="L7S-Mt-MeD" secondAttribute="leading" constant="40" id="3KD-3i-YqE"/>
+                            <constraint firstAttribute="trailing" secondItem="EET-ML-ge2" secondAttribute="trailing" constant="40" id="VeO-hX-9m5"/>
+                            <constraint firstItem="EET-ML-ge2" firstAttribute="centerY" secondItem="L7S-Mt-MeD" secondAttribute="centerY" id="b7Y-YH-1jZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgView" destination="EET-ML-ge2" id="TuW-9D-MvG"/>
+                        <outlet property="closeButton" destination="1nd-l4-ciz" id="o2n-TE-PlS"/>
+                        <outlet property="descTextView" destination="70p-ve-Wjl" id="Ikf-DJ-RgV"/>
+                        <outlet property="userHeaderImageView" destination="ebY-ZE-NWE" id="h2H-Yi-pn7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYi-Te-cH4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-170" y="6"/>
+        </scene>
+    </scenes>
+</document>

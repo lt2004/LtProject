@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Report View Controller-->
+        <scene sceneID="q9H-MK-be3">
+            <objects>
+                <viewController storyboardIdentifier="XTCReportViewController" id="Igu-G5-Z7z" customClass="XTCReportViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D6k-Vh-SWl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TtL-mW-t5n">
+                                <rect key="frame" x="0.0" y="24" width="375" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="TR9-UA-a0D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入举报原因" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNa-gn-jJO">
+                                <rect key="frame" x="8" y="30" width="121.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TtL-mW-t5n" firstAttribute="leading" secondItem="2sC-wd-TmW" secondAttribute="leading" id="0EW-Cs-W44"/>
+                            <constraint firstItem="JNa-gn-jJO" firstAttribute="top" secondItem="2sC-wd-TmW" secondAttribute="top" constant="10" id="HcK-kK-Xoe"/>
+                            <constraint firstItem="2sC-wd-TmW" firstAttribute="trailing" secondItem="TtL-mW-t5n" secondAttribute="trailing" id="M6o-8D-bLM"/>
+                            <constraint firstItem="JNa-gn-jJO" firstAttribute="leading" secondItem="2sC-wd-TmW" secondAttribute="leading" constant="8" id="Y1Q-dq-csb"/>
+                            <constraint firstItem="TtL-mW-t5n" firstAttribute="top" secondItem="2sC-wd-TmW" secondAttribute="top" constant="4" id="cOO-mm-uUx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2sC-wd-TmW"/>
+                    </view>
+                    <connections>
+                        <outlet property="defaultLabel" destination="JNa-gn-jJO" id="r24-kv-aan"/>
+                        <outlet property="reportTextView" destination="TtL-mW-t5n" id="FNF-IT-JkI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iB7-dG-pBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="111"/>
+        </scene>
+    </scenes>
+</document>

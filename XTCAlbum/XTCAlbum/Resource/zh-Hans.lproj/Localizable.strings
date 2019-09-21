@@ -1,0 +1,201 @@
+/* 
+  Localizable.strings
+  XTCAlbum
+
+  Created by Mac on 2019/5/25.
+  Copyright © 2019 漫漫. All rights reserved.
+*/
+
+// 通用文字描述
+"XTC_Photo" = "照片";
+"XTC_Video" = "视频";
+"XTC_Select" = "选择";
+"XTC_Cancel" = "取消";
+"XTC_Select_Count" = "已选中%d张";
+"XTC_Delete" = "删除";
+"XTC_Move" = "移动";
+"XTC_Publish" = "发布";
+"XTC_Submit" = "确定";
+"XTC_Lock" = "锁定";
+"XTC_Infor" = "详情";
+"XTC_Share" = "分享";
+"XTC_Login" = "登录";
+"XTC_Commit" = "提交";
+"XTC_Register" = "注册";
+"XTC_Finish" = "完成";
+"XTC_Select_All" = "全选";
+"XTC_Cancel_Select_All" = "取消全选";
+"XTC_Recover" = "恢复";
+"XTC_Delete_Loading" = "删除中...";
+"XTC_Delete_Success" = "删除成功";
+"XTC_Recover_Loading" = "恢复中...";
+"XTC_Cancel_Selelct" = "取消选择";
+"XTC_Loading" = "加载中";
+"XTC_Remove" = "移除";
+"XTC_Login_Exit" = "退出登录";
+"XTC_Exit" = "退出";
+"XTC_ICloud_Cancel_Download" = "取消iCloud下载";
+
+// Tarbar部分
+"Tabbar_All" = "全部";
+"Tabbar_Time" = "时间";
+"Tabbar_Footer" = "足迹";
+"Tabbar_Album" = "相册";
+
+// 设置
+"Setting_Private_Album" = "私密相册";
+"Setting_Draft" = "小秘书";
+"Setting_Send_Feedback" = "发送反馈";
+"Setting_About_Us" = "关于我们";
+"Setting_Invite_Friends" = "邀请好友";
+"Setting_Close_VR_Alert" = "关闭VR照片提示";
+"Setting_Download_Travel" = "下载小棠菜旅行";
+"Setting_Album_Setting_Name" = "小棠菜相册-设置";
+"Setting_Please_Login" = "请登录";
+"Setting_Build_Version" = "版本号";
+"Setting_Privacy_Service" = "隐私和服务";
+"Setting_About_XTC_Album" = "关于小棠菜相册";
+"Setting_Email" = "留下你的email";
+"Setting_Send_Feedback_Content" = "告诉我们你希望看得到的改进，或是你所遇到的问题？\nWrite your feedback";
+"Setting_Offer_Photo" = "请提供相关问题的截图或照片";
+
+
+// 提示弹窗文字
+"Alert_Delete_Success" = "删除成功";
+"Alert_Delete_Group_Photo" = "您确定要删除这组照片吗？";
+"Alert_Delete_Group_Video" = "您确定要删除这组视频吗？";
+"Please_Selelct_Delete_Photo" = "请选择要删除的照片";
+"Please_Selelct_Delete_Video" = "请选择要删除的视频";
+
+//  本地相册管理
+"Album_Local_Manager" = "本地相册管理";
+"Album_Choiceness_album_title" = "精选影集";
+"Album_Local_Album_Title" = "本地相册";
+"Album_Create_Choiceness_Album" = "创建精选";
+"Album_Create" = "创建";
+"Album_Create_Success" = "创建成功";
+"Album_Create_Album_Title" = "新建相册";
+"Album_Create_Album_Input_Name" = "请为此相册输入名称";
+"Album_Default_Album_Name" = "请输入相册名";
+
+// 登录部分
+"Login_Phone" = "手机号";
+"Login_Password" = "密码";
+"Login_Password_Again" = "确认密码";
+"Login_Loading" = "登录中...";
+"Login_Register_Loading" = "注册中...";
+"Login_Password_Max" = "密码必须大于8位小于16位";
+"Login_Nick_Name_Max" = "昵称必须小于20位";
+"Login_Exit_Title" = "是否退出登录";
+
+//  个人信息
+"Infor_Head_Portrait" = "头像";
+"Infor_Nick_Name" = "昵称";
+"Infor_Modify_Password" = "修改密码";
+"Infor_User_Info" = "个人信息";
+"Info_Select_Album" = "从相册选择";
+"Info_Select_Photograph" = "拍照";
+"Info_Modify_User_Image_Success" = "修改头像成功";
+"Info_Modify_User_Image_Failed" = "修改头像失败";
+"Info_Current_Password" = "原密码";
+"Info_New_Password" = "新密码";
+"Info_Again_Password" = "确认密码";
+"Info_Please_Input_Current_Password" = "输入现在使用的密码";
+"Infor_Please_New_Password" = "输入新密码";
+"Infor_Please_Again_New_Password" = "确认密码";
+"Info_Please_Input_Current_Password" = "请输入原密码";
+
+// 相册详情
+"Album_Detail_Import" = "导入";
+"Album_No_Photo" = "无照片";
+"Album_No_Photo_Import_Desc" = "您可以通过右下角的\"导入\"按钮导入照片";
+"Album_No_Video" = "无视频";
+"Album_No_Video_Import_Desc" = "您可以通过右下角的\"导入\"按钮导入视频";
+"Album_Please_Move_Photo" = "请选择要移动的照片";
+"Album_Please_Move_Video" = "请选择要移动的视频";
+"Album_Please_Publish_Photo" = "请选择要发布的照片";
+"Album_Please_Publish_Video" = "请选择要发布的视频";
+"Album_Select_Photo" = "选择照片";
+"Album_Select_Video" = "选择视频";
+"Album_Delete_Album" = "删除相簿";
+"Album_Delete_Picks" = "删除精选";
+"Album_Rename" = "精选重命名";
+"Album_Please_Input_Picks_Name" = "请输入影集名称";
+"Album_Picks_Name_Exist" = "影集名称已存在";
+"Album_Delete_Current_Picks" = "是否删除当前精选?";
+"Album_Remove_Pick" = "您要将它们从精选中移除吗？";
+
+// 服务器返回的国家化code
+"ser_001" = "请输入邮箱";
+"ser_002" = "邮箱格式错误";
+"ser_003" = "请输入反馈内容";
+"ser_004" = "请输入手机号";
+"ser_005" = "请输入密码";
+"ser_006" = "手机号码不存在";
+"ser_007" = "登录成功";
+"ser_008" = "操作失败";
+"ser_009" = "密码错误！";
+"ser_010" = "请填写标题";
+"ser_011" = "发布成功";
+"ser_012" = "输入信息有误";
+"ser_013" = "昵称包含禁用词，请更换昵称";
+"ser_014" = "两次密码不一致";
+"ser_015" = "昵称已存在";
+"ser_016" = "手机号码已存在";
+"ser_017" = "手机号已在小棠菜旅行注册过，请直接登录";
+"ser_018" = "请输入正确的手机号码";
+"ser_019" = "注册成功";
+"ser_020" = "设置成功";
+"ser_021" = "请填写昵称";
+"ser_022" = "修改成功";
+"ser_023" = "密码最少8位";
+"ser_024" = "原始密码错误";
+"ser_025" = "账号已禁用";
+"ser_026" = "上传文件类型错误";
+"ser_027" = "请选择上传文件";
+"ser_028" = "相关内容";
+"ser_029"="当前星级不满足发布条件";
+"ser_030"="请填写举报内容";
+"ser_031"="您已举报过该帖子";
+"ser_032"="举报成功";
+
+// 发布
+"Publish_Title" = "发布";
+"Publish_Tag" = "标签";
+"Publish_Input_Title" = "请输入标题";
+"Publish_Input_Desc" = "请输入正文";
+"Publish_Add_Photo_Desc" = "添加描述";
+"Publish_Long_Press_Move_Desc" = "长按相片可拖动排序";
+"Publish_Max_Video" = "最多发布一个视频";
+"Publish_Max_Photo" = "最多发布%d照片";
+"Publish_Rendering" = "正在渲染";
+"Publish_Render_Failed" = "渲染失败";
+"Publish_Save_Draft_Title" = "是否要保存到小秘书?";
+"Publish_Save_Draft" = "保存小秘书";
+"Publish_Have_Save_Draft" = "已保存到小秘书";
+"Publish_Video_Trim" = "视频截取";
+"Publish_Trim" = "截取";
+
+// 私密相册
+"Private_Again_password" = "再次确认密码";
+"Private_Create_Or_Login" = "创建或登录";
+"Private_Delete_Title" = "删除后将无法恢复，确定要删除吗?";
+"Private_Start_Recover" = "开始恢复...";
+"Private_Please_Selelct_Photo" = "请选择要恢复的照片";
+"Private_Please_Selelct_Video" = "请选择要恢复的视频";
+"Private_Recover_Finish" = "恢复完成";
+"Private_Check_Old_Data" = "检测到老版本私密相册，是否要合并数据?";
+"Private_Encrypt_Loading" = "加密中...";
+"Private_Encrypt_Success" = "加密成功";
+"Private_Encrypt_Failed" = "加密失败";
+
+// 足迹
+"Footer_Global_Footer" = "全球足迹";
+"Footer_Country_Count" = "走过%lu个国家";
+"Footer_Country_Area_Count" = "走过%lu个国家和%d个地区";
+
+// 帖子详情
+"Report_Reason" = "请您输入举报原因";
+"XTC_Report" = "举报";
+"Report_Send" = "发送";
+"Report_Success" = "举报成功";

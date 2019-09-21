@@ -1,0 +1,198 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AMap3DMap (6.9.0):
+    - AMapFoundation (~> 1.5)
+  - AMapFoundation (1.5.7)
+  - AMapLocation (2.6.2):
+    - AMapFoundation (~> 1.4)
+  - AMapSearch (6.9.0):
+    - AMapFoundation (~> 1.4)
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
+  - DACircularProgress (2.3.1)
+  - EGOCache (2.1.3)
+  - FLAnimatedImage (1.0.12)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - GoogleToolboxForMac/Defines (2.2.1)
+  - GoogleToolboxForMac/Logger (2.2.1):
+    - GoogleToolboxForMac/Defines (= 2.2.1)
+  - GPUImage (0.1.7)
+  - GTMSessionFetcher/Core (1.2.2)
+  - GVRSDK (1.170.0):
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - HysteriaPlayer (2.2.2)
+  - INTULocationManager (4.3.2)
+  - IQKeyboardManager (6.2.1)
+  - JPImageresizerView (0.5.3)
+  - KVNProgress (2.3.5)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - Mantle (2.0.7):
+    - Mantle/extobjc (= 2.0.7)
+  - Mantle/extobjc (2.0.7)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.0.0)
+  - MZTimerLabel (0.5.4)
+  - RegexKitLite (4.0)
+  - SAMTextView (0.2.2)
+  - SCSiriWaveformView (1.1.1)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - SMCalloutView (2.1.5)
+  - SnapKit (4.2.0)
+  - TheAmazingAudioEngine (1.5.8)
+  - TPKeyboardAvoiding (1.3.2)
+  - TZImagePickerController (3.2.1)
+  - UINavigation-SXFixSpace (1.2.1)
+  - VPImageCropper (0.0.4)
+  - XHLaunchAd (3.7.3):
+    - FLAnimatedImage (~> 1.0.12)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - ZLCollectionViewFlowLayout (1.1.2)
+  - ZZCircleProgress (0.0.2)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - AMap3DMap (~> 6.9.0)
+  - AMapLocation (~> 2.6.2)
+  - AMapSearch (~> 6.9.0)
+  - CocoaLumberjack (~> 3.5.2)
+  - DACircularProgress (~> 2.3.1)
+  - EGOCache (~> 2.1.3)
+  - FMDB (~> 2.7.2)
+  - GPUImage (~> 0.1.7)
+  - GVRSDK
+  - HysteriaPlayer (~> 2.2.2)
+  - INTULocationManager (~> 4.3.2)
+  - IQKeyboardManager (~> 6.2.0)
+  - JPImageresizerView (= 0.5.3)
+  - KVNProgress
+  - MagicalRecord (~> 2.3.2)
+  - Mantle (~> 2.0.2)
+  - Masonry
+  - MBProgressHUD (~> 1.0.0)
+  - MZTimerLabel (~> 0.5.4)
+  - RegexKitLite
+  - SAMTextView (~> 0.2.2)
+  - SCSiriWaveformView (~> 1.1.1)
+  - SDWebImage
+  - SMCalloutView (= 2.1.5)
+  - SnapKit
+  - TheAmazingAudioEngine (~> 1.5.8)
+  - TPKeyboardAvoiding (~> 1.3.1)
+  - TZImagePickerController (~> 3.2.0)
+  - UINavigation-SXFixSpace (~> 1.2.1)
+  - VPImageCropper (~> 0.0.4)
+  - XHLaunchAd (~> 3.7.2)
+  - YYImage (~> 1.0.4)
+  - ZLCollectionViewFlowLayout
+  - ZZCircleProgress (~> 0.0.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - AMap3DMap
+    - AMapFoundation
+    - AMapLocation
+    - AMapSearch
+    - CocoaLumberjack
+    - DACircularProgress
+    - EGOCache
+    - FLAnimatedImage
+    - FMDB
+    - GoogleToolboxForMac
+    - GPUImage
+    - GTMSessionFetcher
+    - GVRSDK
+    - HysteriaPlayer
+    - INTULocationManager
+    - IQKeyboardManager
+    - JPImageresizerView
+    - KVNProgress
+    - MagicalRecord
+    - Mantle
+    - Masonry
+    - MBProgressHUD
+    - MZTimerLabel
+    - RegexKitLite
+    - SAMTextView
+    - SCSiriWaveformView
+    - SDWebImage
+    - SMCalloutView
+    - SnapKit
+    - TheAmazingAudioEngine
+    - TPKeyboardAvoiding
+    - TZImagePickerController
+    - UINavigation-SXFixSpace
+    - VPImageCropper
+    - XHLaunchAd
+    - YYImage
+    - ZLCollectionViewFlowLayout
+    - ZZCircleProgress
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AMap3DMap: c80b264f08f179d9b0949b84c65fc1a51dec9d6f
+  AMapFoundation: 216d58448c80356434ac4332250a8fdb2f5c4d1e
+  AMapLocation: 89a7e4eb6040d32ba73c77a4966ecc66e46aa7c3
+  AMapSearch: af02822537e55b85a4752e9df5c19e4b9da82031
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  EGOCache: f0295dbe041156acabd39021354ad1045ee49e72
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  GoogleToolboxForMac: b3553629623a3b1bff17f555e736cd5a6d95ad55
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
+  GVRSDK: 690e9ca3e4d6161b84ff25519447ed2f53e0eb0b
+  HysteriaPlayer: 8fb4f3dac9b55f060de7bfdd2b8027503b441d3b
+  INTULocationManager: e5dc524611b0cd582f473bc56cc8c389adb2f338
+  IQKeyboardManager: 964638372b4a61892cc74fdfa6fd26de8c9464a2
+  JPImageresizerView: eedd90ce2082fa10f104f4282e428cd1c3da86b9
+  KVNProgress: d7046cce142f1aeb740db39dc3cacfe910fac354
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MZTimerLabel: cd9bfb9304540ef2a9e163384fca9c978f0dbf83
+  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
+  SAMTextView: 979c43bb1fa5859ddfbfeb35e9c296a2b0ec55fd
+  SCSiriWaveformView: 15b9dd6f94c7536e2032b34a35c6ff74d38c7411
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  SMCalloutView: 5c0ee363dc8e7204b2fda17dfad38c93e9e23481
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  TheAmazingAudioEngine: 24e382d9468283bb1b3f08df29b514aa522ef4fd
+  TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
+  TZImagePickerController: bf4c57b98d8707fce41ea6be872414a71c7a8c9d
+  UINavigation-SXFixSpace: 6f699939be0172b5a56f45edcdbf7a4749309a01
+  VPImageCropper: f4895315460bd05fbb22dbee6b063bdd43f25797
+  XHLaunchAd: 97606cb0b0f3938ff637ec70d37cdb4e8eaa3a8e
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  ZLCollectionViewFlowLayout: de00a76445bcdc39cf71a5d4011cf696f806dd12
+  ZZCircleProgress: b90dccaf93f6a22f7dd6fe7a81a34b51978d9247
+
+PODFILE CHECKSUM: 3e2bdd4be884945e5d7fe7d4b7fbbdba0e3b48ec
+
+COCOAPODS: 1.5.3
