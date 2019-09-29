@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-NetworkDemo-NetworkDemoUITests/Pods-NetworkDemo-NetworkDemoUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework
+${BUILT_PRODUCTS_DIR}/AutoSQLiteSwift/AutoSQLiteSwift.framework
+${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework

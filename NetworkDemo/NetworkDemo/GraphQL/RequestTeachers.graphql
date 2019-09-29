@@ -1,0 +1,384 @@
+
+query userLogin($email: String!,$passWord: String!,$userType: Int!) {
+    userLogin(email:$email, password:$passWord, userType:$userType) {
+        token
+        userId
+        userType
+        userName
+    }
+}
+
+
+query getClassrooms($userid: ID!){
+    student(id: $userid) {
+        _id
+        name
+        classrooms {
+            _id
+            name
+        }
+    }
+}
+
+query getStudentClassrooms{
+    studentClassrooms {
+        courseGroups
+        classrooms{
+            _id
+            name
+            start_time
+            progress
+            status
+            schedules {
+                _id
+            }
+            course_version {
+                course {
+                    course_group {
+                        name
+                    }
+                    image {
+                        url
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+query getStudentClassroom($classroomId: ID!){
+    studentClassroom(classroomId: $classroomId) {
+        _id
+        name
+        progress
+        message
+        status
+        start_time
+        nextSchedule{
+            _id
+            start_time
+            status
+        }
+        teacher{
+            name
+        }
+        schedules {
+            _id
+            start_time
+            status
+            lesson {
+                _id
+                intro
+                points
+                contents
+            }
+        }
+        course_version {
+            course{
+                image{
+                    url
+                }
+            }
+        }
+    }
+}
+
+query getStudentSchedules($classroomId: ID!){
+    studentSchedules(classroomId: $classroomId) {
+        _id
+        status{
+            round
+            online
+            homework
+            
+        }
+        schedule{
+            _id
+            status
+            status_homework
+        }
+    }
+}
+
+
+
+query getStudentSchedule($studentScheduleId: ID!){
+    studentSchedule
+    (studentScheduleId: $studentScheduleId) {
+        _id
+        scheduleNo
+        classroom {
+            teacher {
+                name
+            }
+        }
+        schedule {
+            _id
+            record_video{
+                filename
+                url
+            }
+            lesson {
+                intro
+                contents
+                points
+                online {
+                    _id
+                    ppt {
+                        filename
+                        url
+                        taskUUID
+                        totalPageSize
+                    }
+                    pdfs {
+                        filename
+                        url
+                    }
+                    audios {
+                        filename
+                        url
+                    }
+                    videos {
+                        filename
+                        url
+                    }
+                    exams{
+                        _id
+                        category
+                        title
+                        q_score
+                        answer
+                        note
+                        options
+                    }
+                    
+                    
+                }
+            }
+        }
+    }
+}
+
+
+query getRounds($lessonId: ID!) {
+    rounds(lessonId: $lessonId) {
+        _id
+        name
+        pdfs {
+            filename
+            url
+        }
+        videos {
+            filename
+            url
+        }
+    }
+    
+    lesson(id: $lessonId) {
+        intro
+        course_version {
+            course {
+                image {
+                    filename
+                    url
+                }
+                name
+            }
+        }
+    }
+
+}
+
+
+mutation questAddStudentExam(
+                             $studentId:ID!
+                             $scheduleId:ID!
+                             $examRecord:[ExamRecordInput]
+                             $rightExam:Int!
+                             ){
+    addStudentExam(
+                   input:{
+                   student:$studentId
+                   schedule:$scheduleId
+                   exam_record:$examRecord
+                   right_exam:$rightExam
+                   }
+                   ){
+        _id
+    }
+}
+
+query getScheduleExam($scheduleId:ID!,$studentId:ID!){
+    scheduleExam(schedule:$scheduleId,student:$studentId){
+        _id
+        exam_record{
+            _id
+            exam{
+                _id
+                category
+                title
+                q_score
+                answer
+                note
+                options
+            }
+            right_count
+            answer
+        }
+        submit_num
+    }
+}
+
+
+query  getStudentHomeworks($scheduleId: ID!, $studentId: ID!) {
+    studentHomeworks(filter: {student: $studentId, schedule: $scheduleId}) {
+        _id
+        schedule_homework {
+            _id
+            full_score
+            questions_count
+            question_path {
+                _id
+                name
+                sections {
+                    _id
+                    name
+                    parts {
+                        _id
+                        name
+                    }
+                }
+            }
+        }
+        score {
+            keguan
+            zhuguan
+            total
+        }
+        is_submit
+        is_pass
+        is_new
+        is_revised
+    }
+}
+
+
+query getStudentHomework($id: ID!, $byStudent: Boolean) {
+    studentHomework(id: $id, byStudent: $byStudent) {
+        _id
+        part_record {
+            part
+            score
+            total
+            right
+            is_submit
+        }
+        question_record {
+            question
+            part
+            answer
+            score
+            text_comment
+            voice_comment
+        }
+        schedule_homework {
+            _id
+            questions_count
+            full_score
+            question_path {
+                _id
+                name
+                sections {
+                    _id
+                    name
+                    parts {
+                        _id
+                        name
+                        questions_count
+                    }
+                }
+            }
+        }
+        score {
+            keguan
+            zhuguan
+            total
+        }
+        is_submit
+        is_pass
+        is_new
+        is_revised
+    }
+}
+
+
+query getQuestions($studentHomeworkId: ID!, $partId: ID!) {
+    questions(partId: $partId) {
+        _id
+        category
+        title
+        q_score
+        answer
+        note
+        options
+        pre_title
+        group
+    }
+    questionRecords(id: $studentHomeworkId, partId: $partId) {
+        question
+        answer
+        score
+    }
+}
+
+
+mutation questSubmitStudentHomework(
+                                    $id:ID!
+                                    $partId:ID!
+                                    $questionRecord:[QuestionRecordInput]
+                                    $isSubmit:Boolean!
+                                    $isSubmitPart:Boolean!
+                                    ){
+    submitStudentHomework(
+                          id:$id
+                          input:{
+                          partId:$partId
+                          questionRecord:$questionRecord
+                          isSubmit:$isSubmit
+                          isSubmitPart:$isSubmitPart
+                          }
+                          ){
+        _id
+    }
+}
+
+
+query getReportData($classroomId: ID!, $studentId: ID!){
+    classroomRank(classroomId: $classroomId){
+        _id
+        items{
+            total
+            score
+            right_exam
+            student{
+                _id
+                name
+            }
+        }
+    }
+    classroomStudentStat(classroomId: $classroomId, studentId: $studentId){
+        _id
+        homework_rate
+        round_rate
+        online_rate
+        schedule_stats{
+            name
+            exam_score
+            homework_score
+            status_round
+            status_homework
+            status_online
+        }
+    }
+}
